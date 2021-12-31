@@ -6,3 +6,8 @@ export function prenomSelector(state) {
   return state.prenom;
 }
 
+
+export function usersSelector(state) {
+  return state.users;
+}
+

@@ -3,16 +3,25 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { configureStore } from './store/configureStore';
 import { Provider } from 'react-redux';
+import { configureStore } from '@reduxjs/toolkit';
+import { countReducer, usersReducer } from './store/reducers';
+import { BrowserRouter } from 'react-router-dom';
 
-const store = configureStore();
+const store = configureStore({
+  reducer: {
+    count: countReducer,
+    users: usersReducer,
+  }
+});
 
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
