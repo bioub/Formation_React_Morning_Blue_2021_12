@@ -1,0 +1,17 @@
+.Select {
+  user-select: none;
+}
+
+.selected {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.menu {
+  border: 1px solid black;
+}
+
+.item {
+
+  padding: 5px;
+}
