@@ -26,9 +26,9 @@ import { fetchUsers } from "../api";
 // https://github.com/redux-utilities/flux-standard-action
 // { type, payload, error, meta }
 
-export const increment = createAction('INCREMENT', (payload) => ({payload: payload ?? 1}));
-export const decrement = createAction('DECREMENT', (payload) => ({payload: payload ?? 1}));
-export const setPrenom = createAction('SET_PRENOM', (payload) => ({payload: payload ?? ''}));
+export const increment = createAction('INCREMENT', (payload = 1) => ({payload}));
+export const decrement = createAction('DECREMENT', (payload = 1) => ({payload}));
+export const setPrenom = createAction('SET_PRENOM', (payload = '') => ({payload}));
 
 export const fetchUsersThunk = createAsyncThunk('fetchUsers', fetchUsers)
 // export function fetchUsersThunk() {
