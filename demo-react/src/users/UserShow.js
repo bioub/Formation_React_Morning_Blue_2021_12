@@ -1,7 +1,7 @@
-import { useParams } from "react-router-dom";
+//import { useParams } from "react-router-dom";
 
 export function UserShow() {
-  const { id } = useParams();
+ // const { id } = useParams();
 
   
 

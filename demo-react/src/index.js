@@ -10,13 +10,13 @@ import { reducer } from './common/reducer';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={configureStore({reducer})}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <Provider store={configureStore({ reducer })}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function

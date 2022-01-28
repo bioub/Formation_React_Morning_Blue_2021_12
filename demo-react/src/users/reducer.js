@@ -8,11 +8,14 @@ const initialState = {
 
 export const usersReducer = createReducer(initialState, {
   [usersFetch.pending]: (state, action) => ({
+    ...state,
     loading: true,
     items: [],
   }),
   [usersFetch.fulfilled]: (state, action) => ({
+    ...state,
     loading: false,
     items: action.payload,
   }),
 });
+

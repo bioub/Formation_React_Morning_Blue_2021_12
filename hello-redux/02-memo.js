@@ -25,10 +25,10 @@ var items = itemsSelectorMemo(state)
 console.log(items.length);
 console.timeEnd('itemsSelector')
 
-state = {
-  ...state,
-  filter: 'Active',
-}
+// state = {
+//   ...state,
+//   filter: 'Active',
+// }
 
 console.time('itemsSelector')
 var items = itemsSelectorMemo(state)

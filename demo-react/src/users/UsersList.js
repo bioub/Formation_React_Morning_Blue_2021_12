@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export function UsersList({ onMount = () => {}, loading = false, items = [] }) {
   useEffect(() => {
     onMount();
-  }, []);
+  }, [onMount]);
 
   return <div className="UsersList">
    {loading && <div>Loading...</div>}

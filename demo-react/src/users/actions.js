@@ -2,7 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import { getUsers } from "./api";
 
 // export function usersFetch() {
-//   return async (dispatch) => {
+//   return async (dispatch, getState) => {
 //     dispatch({ type: 'USERS_FETCH_REQUESTED' });
 //     const users = await getUsers();
 //     dispatch({ type: 'USERS_FETCH_SUCCESS', payload: users });
